@@ -13,6 +13,6 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "rg" {
-  location = "mexicocentral"
-  name     = "miPrimerGrupoExample"
+  location = var.location
+  name     = var.rg_name
 }
