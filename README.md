@@ -47,3 +47,10 @@ terraform destroy
 Elimina toda la infraestructura definida en los archivos `.tf`.
 
 ---
+
+## gestionar estados remotos
+```bash
+terraform init -backend-config="sas_token=<tu_sas_token>"
+```
+Ejecutar Terraform init con parámetros adicionales: Usa el parámetro -backend-config para incluir el SaaS token. Este token puede ser obtenido en el portal de Azure.
+---
