@@ -54,3 +54,11 @@ terraform init -backend-config="sas_token=<tu_sas_token>"
 ```
 Ejecutar Terraform init con parámetros adicionales: Usa el parámetro -backend-config para incluir el SaaS token. Este token puede ser obtenido en el portal de Azure.
 ---
+
+## Formatear codigo y validar
+```bash
+terraform fmt --rescursive  o "Shift + Alt + F "
+terraform validate
+```
+Formatea el codigo y valida nombres, sintaxis antes del aplicar el plan
+---
